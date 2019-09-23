@@ -1,7 +1,7 @@
 {
   "name": "react-styleguidist",
   "description": "React components style guide generator",
-  "version": "0.0.0-development",
+  "version": "9.2.0-plesk",
   "homepage": "https://github.com/styleguidist/react-styleguidist",
   "author": {
     "name": "Artem Sapegin",
@@ -72,8 +72,8 @@
     "q-i": "^2.0.1",
     "qss": "^2.0.3",
     "react-dev-utils": "^9.0.3",
-    "react-docgen": "^4.1.0",
-    "react-docgen-annotation-resolver": "^1.0.0",
+    "react-docgen": "^5.0.0-beta.1",
+    "react-docgen-annotation-resolver": "^2.0.0",
     "react-docgen-displayname-handler": "^2.1.1",
     "react-group": "^3.0.0",
     "react-icons": "^3.7.0",

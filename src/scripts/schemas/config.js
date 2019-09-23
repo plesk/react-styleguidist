@@ -16,7 +16,7 @@ const kleur = require('kleur');
 const reactDocgen = require('react-docgen');
 const createDisplayNameHandler = require('react-docgen-displayname-handler')
 	.createDisplayNameHandler;
-const annotationResolver = require('react-docgen-annotation-resolver').default;
+const annotationResolver = require('react-docgen-annotation-resolver');
 const logger = require('glogg')('rsg');
 const findUserWebpackConfig = require('../utils/findUserWebpackConfig');
 const getUserPackageJson = require('../utils/getUserPackageJson');
@@ -166,11 +166,11 @@ module.exports = {
 	},
 	resolver: {
 		type: 'function',
-		default: (ast, recast) => {
+		default: ast => {
 			const findAllExportedComponentDefinitions =
 				reactDocgen.resolver.findAllExportedComponentDefinitions;
-			const annotatedComponents = annotationResolver(ast, recast);
-			const exportedComponents = findAllExportedComponentDefinitions(ast, recast);
+			const annotatedComponents = annotationResolver(ast);
+			const exportedComponents = findAllExportedComponentDefinitions(ast);
 			return annotatedComponents.concat(exportedComponents);
 		},
 	},

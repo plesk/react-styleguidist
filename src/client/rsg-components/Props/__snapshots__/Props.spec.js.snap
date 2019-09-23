@@ -628,11 +628,11 @@ exports[`props columns should render PropTypes.shape with formatted defaultProps
         title="{
   bar: 123,
   baz: baz() {
-          return 'foo';
-      },
+  		return 'foo';
+  	},
   bing: bing() {
-          return 'badaboom';
-      },
+  		return 'badaboom';
+  	},
   trotskij: () => 1935,
   qwarc: {
     si: 'señor'
