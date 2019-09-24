@@ -223,7 +223,7 @@ function renderName(prop) {
 }
 
 function renderTypeColumn(prop) {
-	if (prop.flowType) {
+	if (prop.flowType || prop.tsType) {
 		return <Type>{renderFlowType(getType(prop))}</Type>;
 	}
 	return <Type>{renderType(getType(prop))}</Type>;
